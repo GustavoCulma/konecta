@@ -6,12 +6,11 @@ use Livewire\Component;
 
 class AddCartItem extends Component
 {
-
     //inicializando el contador
     public $product;
     public $quantity;
     public $qty = 1;
-   
+  
 
     //recuperar la propiedad quantity
     public function mount()

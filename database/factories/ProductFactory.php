@@ -25,7 +25,7 @@ class ProductFactory extends Factory
         return [
             'name'=>$name,
             'slug'=> Str::slug($name),
-            'reference' => $this->faker->text(),
+            'reference' => $this->faker->sentence(1),
             'weight' => $this->faker->randomElement([10, 20, 30]),
             'price' => $this->faker->randomElement([19.990,49.990,99.990]),
             'category_id' => $category->id,
